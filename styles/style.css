@@ -1,0 +1,39 @@
+body {
+  background-color: #ebe7e7;
+  font-family: "Nunito", sans-serif;
+  font-size: 20pt;
+}
+
+#main-section {
+  max-width: 600px;
+}
+
+#main-aside {
+  margin-right: 50px;
+}
+
+#main-aside li {
+  list-style: none;
+}
+
+#main-aside,
+#main-section {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.article-style {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 14pt;
+  }
+}
