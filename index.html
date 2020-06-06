@@ -9,9 +9,11 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
 
-    <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script defer src="./js/main.js"></script>
-    <script defer src="./js/axios-example.js"></script>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
     <title>Movies</title>
   </head>
 
@@ -30,50 +32,15 @@
       </nav>
     </aside>
 
-    <section id="main-section">
-      <article class="article-style">
-        <header>
-          <h1>Reseña de Buscando a nemo</h1>
-          <small>
-            <time datetime="2020-03-07">
-              07 de Marzo del 2020
-            </time>
-          </small>
-        </header>
-
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint,
-          dignissimos! Quis soluta maiores omnis voluptates animi, asperiores
-          quae tempora minima quaerat rem eos deleniti officia id ipsa! Facilis,
-          quas quisquam.
-        </p>
-
-        <a href="#">Leer mas detalles</a>
-      </article>
-
-      <article class="article-style">
-        <header>
-          <h1>Reseña de The Joker</h1>
-          <small>
-            <time datetime="2020-03-06">
-              06 de Marzo del 2020
-            </time>
-          </small>
-        </header>
-
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint,
-          dignissimos! Quis soluta maiores omnis voluptates animi, asperiores
-          quae tempora minima quaerat rem eos deleniti officia id ipsa! Facilis,
-          quas quisquam.
-        </p>
-
-        <a href="#">Leer mas detalles</a>
-      </article>
-    </section>
+    <section id="main-section"></section>
 
     <footer>
       Copyright 2020
     </footer>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script defer src="./js/main.js" type="module"></script>
   </body>
 </html>

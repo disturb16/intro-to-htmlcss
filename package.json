@@ -1,0 +1,25 @@
+{
+  "name": "intro-to-htmlcss",
+  "version": "1.0.0",
+  "description": "Movie reviews",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/disturb16/intro-to-htmlcss.git"
+  },
+  "author": "Juan Ramos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/disturb16/intro-to-htmlcss/issues"
+  },
+  "homepage": "https://github.com/disturb16/intro-to-htmlcss#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "moment": "^2.26.0"
+  }
+}

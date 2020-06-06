@@ -1,38 +1,38 @@
-class Persona {
-  #edad;
+import { buildArticle, getPosts } from "./post_controller.js";
 
-  constructor(nombre) {
-    this.nombre = nombre;
-    this.#edad = 25;
-  }
+const posts = [
+  {
+    title: "Reseña de Buscando a nemo",
+    date: "2020-03-07",
+    body: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint,
+  dignissimos! Quis soluta maiores omnis voluptates animi, asperiores
+  quae tempora minima quaerat rem eos deleniti officia id ipsa! Facilis,
+  quas quisquam.`,
+  },
+  {
+    title: "Reseña de The Joker",
+    date: "2020-03-06",
+    body: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint,
+  dignissimos! Quis soluta maiores omnis voluptates animi, asperiores
+  quae tempora minima quaerat rem eos deleniti officia id ipsa! Facilis,
+  quas quisquam.`,
+  },
+  {
+    title: "Reseña de The Joker 2",
+    date: "2020-03-06",
+    body: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint,
+  dignissimos! Quis soluta maiores omnis voluptates animi, asperiores
+  quae tempora minima quaerat rem eos deleniti officia id ipsa! Facilis,
+  quas quisquam.`,
+  },
+];
 
-  sayHello() {
-    setTimeout(function () {
-      console.log("Hola mi nombre es " + this.nombre);
-    }, 3000);
-  }
+const section = document.getElementById("main-section");
 
-  sayHello2() {
-    setTimeout(() => {
-      console.log("Hola mi nombre es " + this.nombre);
-    }, 2000);
-  }
+async function main() {
+  buildArticle(section, posts);
+  const listPosts = await getPosts();
+  buildArticle(section, listPosts);
 }
 
-const promesa = new Promise((resolve, reject) => {
-  const sum = 1 + 2;
-
-  if (sum == 2) {
-    resolve("todo bien");
-  } else {
-    reject("todo mal");
-  }
-});
-
-promesa
-  .then((mensaje) => {
-    console.log(mensaje);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+main();
